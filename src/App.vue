@@ -76,6 +76,9 @@ export default Vue.extend({
       })
       this.drawer = false
     }
+  },
+  created() {
+    (window as any).webkit.messageHandlers.FCM.postMessage(`START_RECIEVING`);
   }
 });
 </script>
