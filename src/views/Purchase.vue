@@ -7,13 +7,13 @@
       >{{ coin }}</h1>
       <p
         style="text-align: right;"
-      >rhymes</p>
+      >rhyme</p>
     </div>
     <div class="d-flex align-end mb-3">
       <v-text-field
         v-model="buyNumber"
         class="mr-1"
-        label="rhymes"
+        label="rhyme"
         type="number"
         hide-details
         outlined
