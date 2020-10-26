@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Purchase from '../views/Purchase.vue';
+
+import Purchase from '../views/Purchase.vue'
+import Divination from '../views/Divination.vue'
 import Picture from '../views/Picture.vue';
 
 Vue.use(VueRouter)
@@ -9,7 +11,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Purchase',
-    component: Purchase
+    component: Purchase,
+  },
+  {
+    path: '/',
+    name: 'Divination',
+    component: Divination,
   },
   {
     path: '/picture',
