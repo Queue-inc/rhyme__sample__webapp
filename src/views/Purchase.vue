@@ -7,7 +7,7 @@
       >{{ coin }}</h1>
       <p
         style="text-align: right;"
-      >rhyme</p>
+      >coin</p>
     </div>
     <div class="d-flex align-end mb-3">
       <v-text-field
