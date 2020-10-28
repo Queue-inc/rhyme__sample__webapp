@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/prdct__rhyme__webapp__sample/precache-manifest.f6570ba47fa36ed4b566b6a35e8ab0e0.js"
+  "precache-manifest.5560f8dd21bf92e8a249584dfe9c3758.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "prdct__rhyme__webapp__sample"});
