@@ -22,7 +22,7 @@
       <p style="margin-bottom: 0;">00</p>
     </div>
     <v-btn
-      @click="dialog = true"
+      @click="purchaseCoin"
       block
       color="primary"
     >Purchase</v-btn>
@@ -44,9 +44,18 @@ export default Vue.extend({
     }
   },
   methods: {
-    startReceiving() {
-      (window as any).webkit.messageHandlers.FCM.postMessage(`START_RECIEVING`);
+    purchaseCoin() {
+      (window as any).webkit.messageHandlers.purchase.postMessage(`${this.buyNumber}`)
     },
+    fetchRestore() {
+      const response = (window as any).webkit.messageHandlers.restore.postMessage(`${this.buyNumber}`)
+      if (typeof response === 'number') {
+        this.coin = response
+      }
+    }
+  },
+  mounted() {
+    this.fetchRestore()
   }
 })
 </script>
