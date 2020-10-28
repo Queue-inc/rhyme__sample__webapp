@@ -1,6 +1,5 @@
 module.exports = {
-  publicPath: "./",
-  assetsDir: "",
+  publicPath: "/rhyme__sample__webapp/",
   outputDir: 'docs',
   "transpileDependencies": [
     "vuetify"
